@@ -11,15 +11,60 @@ class MyFirstApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Container(
-            height: 200.0,
-            width: double.infinity,
-            color: Colors.blue,
-              child: const Text('Hello',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
-
-          ),
-        ),
+       body: SingleChildScrollView(
+         child: Column(
+           children: [
+             Container(
+               margin: const EdgeInsets.all(16),
+               height: 200.0,
+               width: double.infinity,
+               color: Colors.green,
+             ),
+             Container(
+               margin: const EdgeInsets.all(16),
+               height: 200.0,
+               width: double.infinity,
+               color: Colors.yellow,
+             ),
+             Container(
+               margin: const EdgeInsets.all(16),
+               height: 200.0,
+               width: double.infinity,
+               color: Colors.green,
+             ),
+             Container(
+               margin: const EdgeInsets.all(16),
+               height: 200.0,
+               width: double.infinity,
+               color: Colors.yellow,
+             ),
+             Container(
+               margin: const EdgeInsets.all(16),
+               height: 200.0,
+               width: double.infinity,
+               color: Colors.green,
+             ),
+             Container(
+               margin: const EdgeInsets.all(16),
+               height: 200.0,
+               width: double.infinity,
+               color: Colors.yellow,
+             ),
+             Container(
+               margin: const EdgeInsets.all(16),
+               height: 200.0,
+               width: double.infinity,
+               color: Colors.green,
+             ),
+             Container(
+               margin: const EdgeInsets.all(16),
+               height: 200.0,
+               width: double.infinity,
+               color: Colors.yellow,
+             )
+           ],
+         ),
+       ),
       ),
     );
   }
