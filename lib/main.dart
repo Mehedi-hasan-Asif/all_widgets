@@ -8,18 +8,38 @@ class MyFirstApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Container(
-            height: 200.0,
-            width: double.infinity,
-            color: Colors.blue,
-              child: const Text('Hello',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
-
-          ),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text('A',style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
+            Text('B',style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
+            Text('C',style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
+            Text('D',style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
+            Text('E',style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
+          ],
         ),
+        // body: Column(
+        //   children: [
+        //     Container(
+        //       color: Colors.red,
+        //       height: 100.0,
+        //       width: double.infinity,
+        //     ),
+        //     Container(
+        //       color: Colors.yellow,
+        //       height: 100.0,
+        //       width: double.infinity,
+        //     ),
+        //     Container(
+        //       color: Colors.blue,
+        //       height: 100.0,
+        //       width: double.infinity,
+        //     )
+        //   ],
+        // )
       ),
     );
   }
